@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900|Roboto:500,700');
+
+.container {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-width-demo {
+    min-width: 400px;
+    overflow: auto;
+}
+
+.container-width-response {
+    min-width: 500px;
+    overflow: auto;
+}
+
+.main-demo {
+    width: 400px;
+    margin: auto;
+}
+
+.main-response {
+    width: 500px;
+    margin: auto;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    font: 400 16px "Lato", sans-serif;
+    color: #828282;
+    justify-content: center;
+    z-index: 1;
+}
+
+h1 {
+    color: #4F4F4F;
+    font-weight: 900;
+    font-size: 34px;
+}
+
+.blue {
+    color: #0088BB;
+}
+
+.dark-blue-background {
+    background-color: #006F99 !important;
+}
+
+header {
+    width: 100%;
+    height: 98px;
+    background-color: #17354A;
+    margin: auto;
+}
+
+.logo-img {
+    width: 124px;
+    display: block;
+    margin: 35px 25px;
+}
+
+#icon-fa {
+    color: #0088BB;
+    font-size: 64px;
+    padding-top: 38px;
+}
+
+.icon-container {
+    height: 140px;
+    width: 140px;
+    background-color: #F2F2F2;
+    border-radius: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.icon-top-padding {
+    padding-top: 66px;
+}
+
+.h1-top-padding {
+    padding-top: 43px;
+}
+
+.form-button-padding {
+    padding-top: 10px;
+    padding-bottom: 179px;
+}
+
+.label-alignment {
+    text-align: left;
+}
+
+label, button {
+    font: 700 12px "Roboto", sans-serif;
+    padding: 6px 0;    
+}
+
+.dropdown-display, .text-input {
+    padding: 0 10px;
+    margin-top: 5px;
+    width: 380px;
+    height: 39px;
+    border: none;
+    color: #BDBDBD;
+    background-color: rgba(189, 189, 189, 0.13);
+    border-radius: 4px;
+    border-style: none;
+}
+
+.text-input {
+    font: 400 16px "Lato", sans-serif;
+    padding-left: 10px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.error-message {
+    color: #D5322F;
+    font-size: 12px;
+    visibility: hidden;
+    text-align: left;
+    margin: 6px auto;
+}
+
+.input-failure {
+    border: 2px solid #D5322F !important;
+}
+
+.input-success {
+    border: 2px solid #5BC759 !important;
+}
+
+.text-input:hover {
+    background-color: rgba(189, 189, 189, 0.24);
+}
+
+.text-input:focus, .text-input:enabled {
+    color: #333333;
+}
+
+.text-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #BDBDBD;
+}
+
+.large-button {
+    width: 400px;
+    font-weight: 500;
+    background-color: #0088BB;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid #0088BB;
+}
+
+/* custom radio buttons */
+label>input {
+    position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.radio-li {
+    width: 200px;
+    text-align: left;
+    position: relative;
+}
+
+.radio-li>label {
+    font: 400 16px "Lato", sans-serif;
+    padding-left: 34px;
+    padding-bottom: 0;
+    position: relative;
+}
+
+.radio-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+.custom-radio {
+    position: absolute;
+    left: 1px;
+    top: 2px;
+	width: 24px;
+	height: 24px;
+    background: rgba(189, 189, 189, 0.13);
+    border: 1px solid #828282;
+    z-index: 0;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+label>input:checked  {
+    color: #0088BB;
+}
+
+label>input:checked ~ .custom-radio {
+    width: 14px;
+	height: 14px;
+    background: #fff;
+    border: 6px solid #0088BB;
+}
+
+/* custom dropdown menu */
+.dropdown-display {
+    position: relative;
+}
+
+.dropdown-display>p {
+    margin: 0;
+    padding-top: 10px;
+    width: 100px;
+}
+
+.dropdown-li>p {
+    padding: 8px;
+    margin: 0;
+}
+
+.fa-chevron-down {
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    border: 1px solid #BDBDBD;
+    border-radius: 4px;
+    background: #fff;
+    width: 400px;
+    z-index: 4;
+}
+
+.dropdown-list>li:hover {
+    background-color: #F6F6F6;
+}

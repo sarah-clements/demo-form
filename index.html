@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Book a demo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/styles.css">
+        <script src="https://use.fontawesome.com/464b1a7c80.js"></script>
+    </head>
+    <body>
+       <div class="container">
+           <header>
+               <!-- removed company logo for this project -->
+           </header>
+        </div>
+        <div class="container container-width-demo icon-top-padding">
+           <main class="main-demo">
+               <div class="icon-container"><span id="icon-fa" class="fa fa-calendar-o" aria-hidden="true"></span></div>
+               <h1 class="h1-padding-top">Book a Demo</h1>
+               <p>Help us customize your demo by answering the following questions below.</p>
+               <form action="enterURL" method="post">
+                    <div class="label-alignment">
+                        <label for="business-email">Business Email</label><br>
+                        <input type="email" id="email" class="text-input" name="email" placeholder="Enter your email">
+                        <p id="error-email" class="error-message"><span class="fa fa-exclamation-triangle" aria-hidden="true">
+                            </span> Please enter a valid email address</p>
+                    </div>
+                    <div class="label-alignment">
+                        <label for="business-size">Business Size</label><br>
+                        <div class="dropdown-display">
+                            <p id="business-default" class="dropdown-default">Select Size</p>
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <div class="dropdown-menu">
+                            <ul id="business-list" class="dropdown-list"></ul>
+                        </div>
+                        <p id="error-business" class="error-message"><span class="fa fa-exclamation-triangle" aria-hidden="true">
+                            </span> Please select an option</p>
+                    </div>
+                    <div class="label-alignment">
+                        <label for="msg">What is the most important thing to you in a solution?</label><br>
+                        <ul id="importance-radio" class="radio-buttons"></ul>
+                    </div>
+                    <p id="error-importance" class="error-message"><span class="fa fa-exclamation-triangle" aria-hidden="true">
+                        </span> Please select a priority</p>
+                    <div class="form-button-padding">
+                        <button id="submit-button" class="large-button" type="submit" value="Send">Continue to Schedule a Time 
+                            <span class="fa fa-arrow-right" aria-hidden="true"></span></button>
+                    </div>
+                </form>
+           </main>
+        </div>
+    </body>
+    <script src="./js/index.js" async></script>
+</html>
